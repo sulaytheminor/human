@@ -42,12 +42,17 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--ink);outline
 .stats{display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--mute);font-size:13px;padding:10px 14px;border-top:1px solid var(--line)}
 .note{color:var(--mute);font-size:13px;margin-top:14px;max-width:80ch}
 .sp{flex:1}
+.ad{width:300px;height:100px;max-width:100%;margin:14px 0 4px;overflow:hidden;display:flex;align-items:center;justify-content:center;border:1px dashed var(--line);border-radius:4px;color:var(--mute);font-size:12px}
 </style>
 </head>
 <body>
 <header>
 <h1>Plainspoken</h1>
-<p>Paste stiff, AI-sounding text and get a looser, more natural version. Runs entirely in your browser: no account, no server, nothing sent anywhere.</p>
+<p>Paste stiff, AI-sounding text and get a looser, more natural version. Completely free, and you don't need to make an account. Runs entirely in your browser: no server, and your text is never sent anywhere.</p>
+<div class="ad" id="ad-top" aria-label="Advertisement">
+<!-- Paste your 300x100 display ad code inside this div (replace the placeholder span) -->
+<span>Ad 300x100</span>
+</div>
 </header>
 <main>
 <div class="bar">
@@ -83,7 +88,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--ink);outline
 <div class="stats"><span>Stiffness: <b id="sOut">-</b></span><span>Changes: <b id="chg">0</b></span></div>
 </section>
 </div>
-<p class="note">This is a rule-based rewriter, not a guarantee against any AI detector. Stiffness is a rough score of stock phrases, em dashes and uniform sentences. Always read the result and adjust it into your own voice. Use it on text you're allowed to edit and to submit.</p>
+<p class="note">This is a rule-based rewriter, not a guarantee against any AI detector.</p>
 </main>
 <script>
 const $=id=>document.getElementById(id);
